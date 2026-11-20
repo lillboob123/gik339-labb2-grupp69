@@ -1,11 +1,14 @@
 // uppgift 4
+// SKapar fyra st const variabler för de olika objekten
+
+
 const checkbox=document.getElementById("divStyle");
 const textfields=document.getElementsByClassName("textfield");
 const button =document.getElementById("tabortknapp");
 const tomrutadiv=document.getElementById("tomruta"); 
 
 // Uppgift 5
-// Skapar en funktionsdeklaration 
+// Skapar en funktionsdeklaration
 
 function textcontrol (e) {
 console.log(e.target.id)
@@ -22,7 +25,7 @@ console.log(e.target.id)
 
 // EVentlyssnare för checkboxen 
 
-checkbox.addEventListenereventlistener("change", function () {
+checkbox.addEventListener("change", function () {
     tomrutadiv.style.backgroundColor = textfields[0].value;
 
 }); 
